@@ -1,15 +1,18 @@
 {
   "name": "server",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "server": "nodemon server"
   },
   "dependencies": {
+    "compromise": "^14.8.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "natural": "^6.1.4",
+    "nlp-compromise": "^7.0.0",
+    "nltk": "^0.0.1",
     "nodemon": "^2.0.20",
     "openai": "^3.1.0"
   }
