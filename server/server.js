@@ -4,6 +4,7 @@ import cors from 'cors'
 import { Configuration, OpenAIApi } from 'openai'
 import nlp from 'compromise'
 
+
 dotenv.config()
 const configuration = new Configuration({
     apiKey: process.env.OPEN_AI_KEY
@@ -25,6 +26,10 @@ function preProcess(input){
 app.post('/',async (req,res)=>{
     try{
         const prompt = req.body.prompt;
+
+
+
+
         let cleanedInput = preProcess(prompt);
         //Tokenize the prompt
          let doc = nlp(cleanedInput)
